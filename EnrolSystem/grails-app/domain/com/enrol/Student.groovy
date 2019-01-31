@@ -5,7 +5,7 @@ class Student {
 String studentName;
 String studentID;
 Date dob;
-isFundingAvailable Boolean;
+Boolean isFundingAvailable;
 String studentEmail;
 String studentUsername;
 String studentPassword;
