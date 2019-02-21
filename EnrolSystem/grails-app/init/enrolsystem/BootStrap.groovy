@@ -4,10 +4,18 @@ class BootStrap {
 
     def init = { servletContext ->
 
+  def tonderariLec = new Lecturer(
+    fullName: "Maswera Tonderai",
+    post: "Post stuff",
+    subject: "Computing",
+    lecturerEmail: "Tonderai@yahoo.com",
+    office: "A653",
+    bio: "iihoi]fsoighspoijhgijhsgpij jijgoijspoigj",
+    ).save()
 	def computing= new Course(
 	department: "Computing",
 	courseTitle: "Computing",
-	courseLeader: "Dr Michelle Murphy",
+	courseLeader: tonderariLec,
 	courseCode: "CS123",
 	startDate: new Date('09/09/2019'),
 	endDate: new Date('07/07/2023'),
@@ -19,7 +27,7 @@ class BootStrap {
 	def computerScience= new Course(
 	department: "Computing",
 	courseTitle: "Computer Science",
-	courseLeader: "Dr Tonderai",
+	courseLeader: tonderariLec,
 	courseCode: "CS233",
 	startDate: new Date('09/09/2019'),
 	endDate: new Date('07/07/2023'),
@@ -31,7 +39,7 @@ class BootStrap {
 	def law= new Course(
 	department: "Law",
 	courseTitle: "Law",
-	courseLeader: "Dr Jason Law",
+	courseLeader: tonderariLec,
 	courseCode: "CS563",
 	startDate: new Date('09/09/2019'),
 	endDate: new Date('07/07/2023'),

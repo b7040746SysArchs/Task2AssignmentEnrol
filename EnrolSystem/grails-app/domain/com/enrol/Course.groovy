@@ -4,7 +4,7 @@ class Course {
 
 String department;
 String courseTitle;
-String courseLeader;
+Lecturer courseLeader;
 String courseCode;
 Date startDate;
 Date endDate;
