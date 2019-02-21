@@ -40,6 +40,25 @@ class BootStrap {
 	tuitionFees: 9000.60,
 	studyMode: "Full Time").save()
 
+  def casey = new Student(
+    studentName: "Casey Smith",
+    studentID: "44HDHD",
+    dob: new Date('13/05/1997'),
+    studentEmail: "caseyrsmith43@gmail.com",
+    studentUsername: "Casey6624",
+    studentPassword: "Dogs11",
+    isFundingAvailable: false,
+    course: computing
+    ).save()
+
+  def systemArhcs = new Module(
+    module_title: "System Architectures",
+    module_code: "SysArchs123",
+    credits: 50,
+    lecturer: "Maswera Tonderai",
+    description: "Grails and stuff"
+    ).save()
+
     }
     def destroy = {
     }

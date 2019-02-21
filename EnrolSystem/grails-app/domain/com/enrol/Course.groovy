@@ -13,6 +13,10 @@ int numberOfStudents;
 double tuitionFees;
 String studyMode;
 
+String toString(){
+  return courseTitle;
+}
+
     static constraints = {
 	courseTitle blank:false,nullable: false
 
@@ -36,4 +40,4 @@ String studyMode;
 
     }
 
-} 
+}

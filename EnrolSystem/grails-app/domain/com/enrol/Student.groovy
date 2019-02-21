@@ -9,7 +9,7 @@ Boolean isFundingAvailable;
 String studentEmail;
 String studentUsername;
 String studentPassword;
-String course;
+Course course;
 
     static constraints = {
 	studentName blank:false,nullable: false
