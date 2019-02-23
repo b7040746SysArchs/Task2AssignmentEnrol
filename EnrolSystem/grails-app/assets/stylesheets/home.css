@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300");
+
+.first, .fourth{
+  background-color: #9fff33;
+}
+.second, .third{
+    background-color: #c2d506;
+}
+
+body{
+  font-family: "Open Sans Condensed", sans-serif;
+}
