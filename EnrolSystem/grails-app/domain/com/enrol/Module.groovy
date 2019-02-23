@@ -8,6 +8,9 @@ int credits;
 String lecturer;
 String description;
 
+static hasMany=[course:Course]
+static belongsTo=[Course]
+
     static constraints = {
 	module_title blank:false, nullable: false
 	module_code blank:false, nullable: false

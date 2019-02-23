@@ -81,6 +81,17 @@ class BootStrap {
     course: computing
     ).save()
 
+    def jacob = new Student(
+      studentName: "Jacob Young",
+      studentID: "44111HD",
+      dob: new Date('13/05/1998'),
+      studentEmail: "jacob11@gmail.com",
+      studentUsername: "Jacob1763",
+      studentPassword: "Dogs22",
+      isFundingAvailable: false,
+      course: computing
+      ).save()
+
 // module classes
 
   def systemArhcs = new Module(
@@ -107,16 +118,26 @@ class BootStrap {
         description: "Housing law and stuff"
         ).save()
 
+
     tonderariLec.addToModules(systemArhcs)
     tonderariLec.addToModules(webApplications)
     laurieLec.addToModules(webApplications)
     brianLec.addToModules(housingLaw)
+
 
     computing.addToLecturers(tonderariLec)
     computing.addToLecturers(laurieLec)
     law.addToLecturers(brianLec)
 
     laurieLec.addToCourses(computerScience)
+
+    computing.addToStudents(casey)
+    computing.addToStudents(jacob)
+
+    computing.addToModules(systemArhcs)
+    computing.addToModules(webApplications)
+    computerScience.addToModules(systemArhcs)
+    law.addToModules(housingLaw)
 
     }
     def destroy = {
