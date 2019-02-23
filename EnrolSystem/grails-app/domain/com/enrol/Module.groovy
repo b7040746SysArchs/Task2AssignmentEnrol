@@ -8,7 +8,11 @@ int credits;
 String lecturer;
 String description;
 
-static hasMany=[course:Course]
+String toString(){
+  return module_title;
+}
+
+static hasMany=[course:Course, students:Student]
 static belongsTo=[Course]
 
     static constraints = {

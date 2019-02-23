@@ -139,6 +139,11 @@ class BootStrap {
     computerScience.addToModules(systemArhcs)
     law.addToModules(housingLaw)
 
+    systemArhcs.addToStudents(casey)
+    webApplications.addToStudents(casey)
+    systemArhcs.addToStudents(jacob)
+    webApplications.addToStudents(jacob)
+
     }
     def destroy = {
     }

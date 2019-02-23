@@ -11,6 +11,14 @@ String studentUsername;
 String studentPassword;
 Course course;
 
+String toString(){
+  return studentName;
+}
+
+static hasMany=[modules:Module]
+
+static belongsTo=[Course, Module]
+
     static constraints = {
 	studentName blank:false,nullable: false
 	studentID blank:false,nullable: false
