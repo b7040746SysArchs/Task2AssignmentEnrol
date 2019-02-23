@@ -3,6 +3,7 @@ package com.enrol
 class BootStrap {
 
     def init = { servletContext ->
+/*
 // lecturer classes
   def tonderariLec = new Lecturer(
     fullName: "Maswera Tonderai",
@@ -143,7 +144,7 @@ class BootStrap {
     webApplications.addToStudents(casey)
     systemArhcs.addToStudents(jacob)
     webApplications.addToStudents(jacob)
-
+*/
     }
     def destroy = {
     }

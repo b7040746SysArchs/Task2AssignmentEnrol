@@ -12,7 +12,7 @@ String toString(){
   return module_title;
 }
 
-static hasMany=[course:Course, students:Student]
+static hasMany=[courses:Course, students:Student]
 static belongsTo=[Course]
 
     static constraints = {
