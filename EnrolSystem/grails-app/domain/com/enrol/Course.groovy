@@ -13,6 +13,8 @@ int numberOfStudents;
 double tuitionFees;
 String studyMode;
 
+static hasMany =[lecturers: Lecturer]
+
 String toString(){
   return courseTitle;
 }

@@ -10,6 +10,10 @@ String office;
 String bio;
 Course theCourse;
 
+static hasMany=[modules:Module, courses:Course]
+
+static belongsTo=[Course]
+
 String toString(){
   return fullName;
 }
