@@ -8,6 +8,8 @@ String subject;
 String lecturerEmail;
 String office;
 String bio;
+String username;
+String password;
 Course theCourse;
 
 static hasMany=[modules:Module, courses:Course]
@@ -26,6 +28,8 @@ String toString(){
 	lecturerEmail blank:false,nullable: false, email: true
 	office blank:false,nullable: false
 	bio nullable: false, maxSize: 5000, widget: 'textarea'
+  username blank:false,nullable: false, unique: true
+  password blank:false,nullable: false, password: true
   theCourse nullable: true, blank: true
     }
 }
