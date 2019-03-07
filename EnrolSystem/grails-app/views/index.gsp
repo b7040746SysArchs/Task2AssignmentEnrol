@@ -15,15 +15,6 @@
   <asset:image src="main1.fw.png" />
 </div>
 
-        <div id="controllers" role="navigation">
-            <ul>
-                <g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
-                    <li class="controller">
-                        <g:link controller="${c.logicalPropertyName}">${c.logicalPropertyName}</g:link>
-                    </li>
-                </g:each>
-            </ul>
-        </div>
     </section>
 </div>
 
